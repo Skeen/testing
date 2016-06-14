@@ -7,11 +7,6 @@ services:
 
 before_install:
     - docker build -t demo-app .
-    - docker run -d --name app demo-app
-    - docker ps -a
 
 script:
-    - docker exec app npm test
-
-after_script:
-    - docker rm -f app
+    - docker run -it --rm demo-app
