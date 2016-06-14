@@ -10,3 +10,7 @@ before_install:
 
 script:
     - docker run -it --rm demo-app
+
+cache:
+    directories:
+        - /var/lib/docker/
