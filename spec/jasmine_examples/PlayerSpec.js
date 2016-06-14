@@ -27,7 +27,7 @@ describe("Player", function() {
       expect(player.isPlaying).toBeFalsy();
 
       // demonstrates use of 'not' with a custom matcher
-      expect(player).not.toBePlaying(song);
+      expect(player).toBePlaying(song);
     });
 
     it("should be possible to resume", function() {
